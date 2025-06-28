@@ -2,26 +2,29 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
-      './pages/**/*.{js,ts,jsx,tsx,mdx}',
-      './components/**/*.{js,ts,jsx,tsx,mdx}',
-      './app/**/*.{js,ts,jsx,tsx,mdx}',
+      './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+      './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+      './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+      './public/**/*.html',
     ],
     theme: {
       extend: {
-        // ส่วนขยาย theme เดิมของคุณ
+        fontFamily: {
+          sans: ['var(--font-poppins)', 'sans-serif'],
+        },
       },
     },
     plugins: [
-      require("daisyui") // <--- บรรทัดนี้สำคัญมาก!
+      require("daisyui")
     ],
     daisyui: {
-      themes: ["light", "dark", "cupcake", "synthwave"], // เลือกธีมที่คุณต้องการ
+      themes: ["light", "dark", "cupcake", "synthwave"], 
       darkTheme: "dark",
       base: true,
       styled: true,
       utils: true,
       prefix: "",
-      logs: true,
+      logs: false,
       themeRoot: ":root",
     },
   };
