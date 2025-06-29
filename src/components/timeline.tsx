@@ -12,7 +12,7 @@ const Timeline = () => {
           {/* วงกลมและไอคอน */}
           <span className="absolute flex items-center justify-center w-10 h-10 mt-20 bg-purple-100 rounded-full -start-8 "></span>
 
-          <div className="bg-[#CFCFCF]/25 rounded-3xl  p-6 border-2 border-white/50 backdrop-blur-xs">
+          <div className="bg-[#CFCFCF]/25  hover:bg-[#737373]/25 rounded-3xl  p-6 border-2 border-white/50 backdrop-blur-xs">
             <h2 className="text-lg font-semibold mb-4">
               January 2025 - Present
             </h2>
@@ -35,7 +35,7 @@ const Timeline = () => {
           {/* วงกลมและไอคอน */}
           <span className="absolute flex items-center justify-center w-10 h-10 mt-15 bg-purple-100 rounded-full -start-8 "></span>
 
-          <div className="bg-[#CFCFCF]/25 rounded-3xl p-6 border-2 border-white/50 backdrop-blur-xs">
+          <div className="bg-[#CFCFCF]/25  hover:bg-[#737373]/25 rounded-3xl p-6 border-2 border-white/50 backdrop-blur-xs">
             <h2 className="text-lg font-semibold mb-4">
               August 2024 - December 2024
             </h2>
@@ -58,7 +58,7 @@ const Timeline = () => {
           {/* วงกลมและไอคอน */}
           <span className="absolute flex items-center justify-center w-10 h-10 mt-15 bg-white rounded-full -start-8 "></span>
 
-          <div className="bg-[#CFCFCF]/25 rounded-3xl p-6 border-2 border-white/50 backdrop-blur-xs">
+          <div className="bg-[#CFCFCF]/25  hover:bg-[#737373]/25 rounded-3xl p-6 border-2 border-white/50 backdrop-blur-xs">
             <h2 className="text-lg font-semibold mb-4">May 2024 - July 2024</h2>
             <p className="font-semibold text-sm">
               <span className="text-[#A781FF] ">Internship </span>at Kanagawa
@@ -79,7 +79,7 @@ const Timeline = () => {
             
           </span>
 
-          <div className="bg-[#CFCFCF]/25 rounded-3xl p-6 border-2 border-white/50 backdrop-blur-xs">
+          <div className="bg-[#CFCFCF]/25 hover:bg-[#737373]/25 rounded-3xl p-6 border-2 border-white/50 backdrop-blur-xs">
             <h2 className="text-lg font-semibold mb-4">
               August 2023 - December 2023
             </h2>

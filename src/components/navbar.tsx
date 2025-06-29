@@ -23,7 +23,7 @@ const Navbar = () => {
                 px-6 py-3 rounded-full text-m font-bold transition-colors duration-300
                 ${
                   activeItem === item
-                    ? 'bg-[#A781FF] text-black' // Active state style
+                    ? 'bg-[#A781FF] text-black hover:bg-[#7f68b9]' // Active state style
                     : 'text-gray-700 hover:bg-gray-100' // Inactive state + hover style
                 }
               `}
