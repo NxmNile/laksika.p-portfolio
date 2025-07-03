@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     
-    <nav className="bg-white p-2 rounded-full shadow-lg w-[858px] h-13 flex justify-center">
+    <nav className="bg-white p-2 rounded-full shadow-lg w-[858px] h-13 flex justify-center shadow-neutral-950/50">
       <ul className="flex items-center space-x-20">
         {navItems.map((item) => (
           <li key={item}>
