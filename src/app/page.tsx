@@ -43,13 +43,18 @@ export default function Home() {
             <div className="realtive">
               <img
                 src="/image/star1.png"
-                className="absolute top-220  left-335 w-40 h-40"
+                className="absolute top-220  right-50 w-40 h-40"
                 alt="Star"
               />
               <Timeline />
             </div>
           </div>
+          <div className="w-[858px] mt-20">
+            <h1 className="text-white text-3xl font-bold mt-10 text-center">Skills!</h1>
+          </div>
         </div>
+
+
         <div className="absolute w-100 h-100 rounded-full bg-[#813fcc] opacity-40 blur-3xl pointer-events-none top-100 -left-10"></div>
 
       </div>
