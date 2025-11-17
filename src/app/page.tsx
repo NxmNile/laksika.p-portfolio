@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/navbar";
 import Timeline from "../components/timeline";
+import SkillBar from "../components/skillbar";
 
 export default function Home() {
   return (
@@ -51,6 +52,9 @@ export default function Home() {
           </div>
           <div className="w-[858px] mt-20">
             <h1 className="text-white text-3xl font-bold mt-10 text-center">Skills!</h1>
+            <div className="mt-6">
+              <SkillBar />
+            </div>
           </div>
         </div>
 

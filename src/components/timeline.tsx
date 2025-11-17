@@ -1,16 +1,46 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useRef } from "react";
 
 const Timeline = () => {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    const items = container.querySelectorAll('.timeline-item');
+    if (!items || items.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const el = entry.target as HTMLElement;
+            el.classList.add('opacity-100', 'translate-y-0');
+            el.classList.remove('opacity-0', 'translate-y-6');
+            observer.unobserve(el);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+
+    items.forEach((it) => observer.observe(it));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className="p-8 max-w-sm  mt-10">
+    <div ref={containerRef} className="p-8 max-w-sm  mt-10">
       <ol className="relative w-[858px] items-center">
         {/* --- Step 1: Completed --- */}
-        <li className="mb-8 ms-20 ">
+  <li className="timeline-item mb-8 ms-20 opacity-0 translate-y-6 transform transition-all duration-700 ease-out">
           {/* เส้นเชื่อมสีฟ้า */}
-          <div className="absolute w-1 h-140 mt-20 bg-[#20D8E5] rounded-full -start-[0.8rem] "></div>
+          <div className="absolute w-1 h-140 mt-20 bg-[#20D8E5] rounded-full -start-12"></div>
 
           {/* วงกลมและไอคอน */}
-          <span className="absolute flex items-center justify-center w-10 h-10 mt-20 bg-purple-100 rounded-full -start-8 "></span>
+          <span className="absolute flex items-center justify-center w-10 h-10 mt-20 bg-purple-100 rounded-full -start-17 "></span>
 
           <div className="bg-[#CFCFCF]/25  rounded-3xl  p-6 border-2 border-white/50 backdrop-blur-xs">
             <h2 className="text-lg font-semibold mb-4">
@@ -29,11 +59,11 @@ const Timeline = () => {
         </li>
 
         {/* --- Step 2: Completed --- */}
-        <li className="mb-8 ms-20">
+  <li className="timeline-item mb-8 ms-20 opacity-0 translate-y-6 transform transition-all duration-700 ease-out">
           
 
           {/* วงกลมและไอคอน */}
-          <span className="absolute flex items-center justify-center w-10 h-10 mt-15 bg-purple-100 rounded-full -start-8 "></span>
+          <span className="absolute flex items-center justify-center w-10 h-10 mt-15 bg-purple-100 rounded-full -start-17 "></span>
 
           <div className="bg-[#CFCFCF]/25  rounded-3xl p-6 border-2 border-white/50 backdrop-blur-xs">
             <h2 className="text-lg font-semibold mb-4">
@@ -52,11 +82,11 @@ const Timeline = () => {
         </li>
 
         {/* --- Step 3: Current --- */}
-        <li className="mb-8 ms-20">
+  <li className="timeline-item mb-8 ms-20 opacity-0 translate-y-6 transform transition-all duration-700 ease-out">
          
 
           {/* วงกลมและไอคอน */}
-          <span className="absolute flex items-center justify-center w-10 h-10 mt-15 bg-white rounded-full -start-8 "></span>
+          <span className="absolute flex items-center justify-center w-10 h-10 mt-15 bg-white rounded-full -start-17 "></span>
 
           <div className="bg-[#CFCFCF]/25  rounded-3xl p-6 border-2 border-white/50 backdrop-blur-xs">
             <h2 className="text-lg font-semibold mb-4">May 2024 - July 2024</h2>
@@ -73,9 +103,9 @@ const Timeline = () => {
         </li>
 
         {/* --- Step 4: Upcoming (Last) --- */}
-        <li className="ms-20">
+  <li className="timeline-item ms-20 opacity-0 translate-y-6 transform transition-all duration-700 ease-out">
           {/* วงกลมและไอคอน */}
-          <span className="absolute flex items-center justify-center w-10 h-10 mt-15 bg-white  rounded-full -start-8 ">
+          <span className="absolute flex items-center justify-center w-10 h-10 mt-15 bg-white  rounded-full -start-17 ">
             
           </span>
 
