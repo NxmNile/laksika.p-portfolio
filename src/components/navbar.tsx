@@ -27,13 +27,13 @@ const Navbar = () => {
   }, [pathname]);
 
   return (
-    <nav className="bg-white p-2 rounded-full shadow-lg w-[858px] h-13 flex justify-center shadow-neutral-950/50">
-      <ul className="flex items-center space-x-20">
+    <nav className="bg-white p-1 sm:p-2 rounded-full shadow-lg w-full h-13 max-w-[858px] flex justify-center mx-auto shadow-neutral-950/50">
+      <ul className="flex flex-wrap justify-center items-center gap-2 sm:gap-4 md:gap-17 py-1 md:py-0">
         {navItems.map((item) => (
           <li key={item}>
             <Link
               href={routeMap[item] ?? '#'}
-              className={`px-6 py-3 rounded-full text-m font-bold transition-colors duration-300 ${
+              className={`px-2 sm:px-3 md:px-6 py-1 sm:py-2 md:py-3 rounded-full text-xs sm:text-sm md:text-base font-bold transition-colors duration-300 ${
                 activeItem === item
                   ? 'bg-[#A781FF] text-black hover:bg-[#7f68b9]'
                   : 'text-gray-700 hover:bg-gray-100'

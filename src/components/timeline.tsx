@@ -32,22 +32,16 @@ const Timeline = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="p-8 max-w-sm  mt-10">
-      <ol className="relative w-[858px] items-center">
+    <div ref={containerRef} className="p-6 w-full max-w-[858px] mx-auto mt-10">
+      <ol className="relative w-full items-center">
         {/* --- Step 1: Completed --- */}
-  <li className="timeline-item mb-8 ms-20 opacity-0 translate-y-6 transform transition-all duration-700 ease-out">
-          {/* เส้นเชื่อมสีฟ้า */}
-          <div className="absolute w-1 h-140 mt-20 bg-[#20D8E5] rounded-full -start-12"></div>
-
-          {/* วงกลมและไอคอน */}
-          <span className="absolute flex items-center justify-center w-10 h-10 mt-20 bg-purple-100 rounded-full -start-17 "></span>
-
-          <div className="bg-[#CFCFCF]/25  rounded-3xl  p-6 border-2 border-white/50 backdrop-blur-xs">
+  <li className="timeline-item relative mb-8 opacity-0 translate-y-6 transform transition-all duration-700 ease-out">
+    <div className="bg-[#CFCFCF]/25  rounded-3xl  p-6 border-2 border-white/50 backdrop-blur-xs w-full">
             <h2 className="text-lg font-semibold mb-4">
               January 2025 - Present
             </h2>
             <p className="font-semibold text-sm">
-              <span className="text-[#A781FF]">Research Assistant </span>at
+              <span className="text-[#A781FF]">Research Assistant and Software Engineer </span>at
               HITAP, Thailand
             </p>
             <p className="text-sm mt-1">
@@ -59,13 +53,8 @@ const Timeline = () => {
         </li>
 
         {/* --- Step 2: Completed --- */}
-  <li className="timeline-item mb-8 ms-20 opacity-0 translate-y-6 transform transition-all duration-700 ease-out">
-          
-
-          {/* วงกลมและไอคอน */}
-          <span className="absolute flex items-center justify-center w-10 h-10 mt-15 bg-purple-100 rounded-full -start-17 "></span>
-
-          <div className="bg-[#CFCFCF]/25  rounded-3xl p-6 border-2 border-white/50 backdrop-blur-xs">
+  <li className="timeline-item relative mb-8 opacity-0 translate-y-6 transform transition-all duration-700 ease-out">
+    <div className="bg-[#CFCFCF]/25  rounded-3xl p-6 border-2 border-white/50 backdrop-blur-xs w-full">
             <h2 className="text-lg font-semibold mb-4">
               August 2024 - December 2024
             </h2>
@@ -82,13 +71,8 @@ const Timeline = () => {
         </li>
 
         {/* --- Step 3: Current --- */}
-  <li className="timeline-item mb-8 ms-20 opacity-0 translate-y-6 transform transition-all duration-700 ease-out">
-         
-
-          {/* วงกลมและไอคอน */}
-          <span className="absolute flex items-center justify-center w-10 h-10 mt-15 bg-white rounded-full -start-17 "></span>
-
-          <div className="bg-[#CFCFCF]/25  rounded-3xl p-6 border-2 border-white/50 backdrop-blur-xs">
+  <li className="timeline-item relative mb-8 opacity-0 translate-y-6 transform transition-all duration-700 ease-out">
+    <div className="bg-[#CFCFCF]/25  rounded-3xl p-6 border-2 border-white/50 backdrop-blur-xs w-full">
             <h2 className="text-lg font-semibold mb-4">May 2024 - July 2024</h2>
             <p className="font-semibold text-sm">
               <span className="text-[#A781FF] ">Internship </span>at Kanagawa
@@ -103,13 +87,8 @@ const Timeline = () => {
         </li>
 
         {/* --- Step 4: Upcoming (Last) --- */}
-  <li className="timeline-item ms-20 opacity-0 translate-y-6 transform transition-all duration-700 ease-out">
-          {/* วงกลมและไอคอน */}
-          <span className="absolute flex items-center justify-center w-10 h-10 mt-15 bg-white  rounded-full -start-17 ">
-            
-          </span>
-
-          <div className="bg-[#CFCFCF]/25 rounded-3xl p-6 border-2 border-white/50 backdrop-blur-xs">
+  <li className="timeline-item relative mb-0 opacity-0 translate-y-6 transform transition-all duration-700 ease-out">
+    <div className="bg-[#CFCFCF]/25 rounded-3xl p-6 border-2 border-white/50 backdrop-blur-xs w-full">
             <h2 className="text-lg font-semibold mb-4">
               August 2023 - December 2023
             </h2>

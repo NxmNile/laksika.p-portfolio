@@ -88,11 +88,11 @@ const SkillBar: React.FC = () => {
 	}, []);
 
 	return (
-		<section ref={containerRef} className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+	<section ref={containerRef} className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
 			{sections.map((sec) => (
 				<div
 					key={sec.title}
-					className="skill-section p-4 rounded-3xl bg-white/30 backdrop-blur-md border border-white shadow-sm transform transition-all duration-700 ease-out opacity-0 translate-y-6"
+					className="skill-section w-full p-4 rounded-3xl bg-white/30 backdrop-blur-md border border-white shadow-sm transform transition-all duration-700 ease-out opacity-0 translate-y-6"
 				>
 					<h3 className="text-lg font-semibold mb-2 text-white">{sec.title}</h3>
 
