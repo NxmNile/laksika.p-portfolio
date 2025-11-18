@@ -47,7 +47,7 @@ export default function DrakePage() {
               <div className="w-full flex flex-col text-left text-sm sm:text-base font-medium">
                 <h2 className="text-xl md:text-2xl font-semibold mb-4">About</h2>
                 <p className="text-gray-200 leading-relaxed">
-                  This was a classroom assignment. Character model named "Drake" from God of War game.  I handled the full asset pipeline: sculpting the high resolution model, performing retopology to create an efficient mesh, unwrapping UVs for texturing, and painting textures in Adobe Substance Painter.
+                  This was a classroom assignment. Character model named &quot;Drake&quot; inspired by God of War. I handled the full asset pipeline: sculpting the high resolution model, performing retopology to create an efficient mesh, unwrapping UVs for texturing, and painting textures in Adobe Substance Painter.
                 </p>
 
                 <div className="mt-6">

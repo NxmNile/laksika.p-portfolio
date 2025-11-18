@@ -49,7 +49,7 @@ export default function ChickenPage() {
                 <div className="w-full flex flex-col text-left text-sm sm:text-base font-medium">
                   <h2 className="text-xl md:text-2xl font-semibold mb-4">About</h2>
                   <p className="text-gray-200 leading-relaxed">
-                    Chicken Home is an educational game about avian influenza developed in collaboration with Thailand's Department of Disease Control. Players raise and care for chickens, customize their appearance with dress-up options, and play a variety of mini-games designed to teach biosecurity, safe handling, and early detection practices. I served as Game Developer and Technical Artist, responsible for optimizing systems and designing interactive feedback to keep the experience both informative and enjoyable.
+                    Chicken Home is an educational game about avian influenza developed in collaboration with Thailand&apos;s Department of Disease Control. Players raise and care for chickens, customize their appearance with dress-up options, and play a variety of mini-games designed to teach biosecurity, safe handling, and early detection practices. I served as Game Developer and Technical Artist, responsible for optimizing systems and designing interactive feedback to keep the experience both informative and enjoyable.
                   </p>
 
                   <div className="mt-6">

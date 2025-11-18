@@ -50,7 +50,7 @@ export default function WhiskerPage() {
 								<div className="w-full flex flex-col text-left text-sm sm:text-base font-medium">
 									<h2 className="text-xl md:text-2xl font-semibold mb-4">About</h2>
 									<p className="text-gray-200 leading-relaxed">
-									"Whisker Detective" is a narrative detective adventure developed during my internship. Research topic is porting game project to new game
+                                    &quot;Whisker Detective&quot; is a narrative detective adventure developed during my internship. Research topic is porting game project to new game
 		 engine. Built with a mix of Unity and Godot tools, the game blends puzzle solving with environmental storytelling. Multi Language support was implemented. It was showcased at Tokyo Game Show 2024. 
                                     
 									</p>

@@ -21,7 +21,7 @@ export default function Home() {
               <h2 className="text-4xl mb-4">Hello!</h2>
               <ul className="list-disc list-inside space-y-4 text-2xl">
                 <div>
-                  I'm <span className="text-[#A781FF]">Laksika Panich</span>,
+                  I&apos;m <span className="text-[#A781FF]">Laksika Panich</span>,
                 </div>
                 <div>Software Engineer</div>
                 <a
@@ -34,10 +34,10 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-10 text-white text-left w-full max-w-[858px] mx-auto px-4">
-            I'm a developer who loves building fun, functional, and
+            I&apos;m a developer who loves building fun, functional, and
             user centered digital experiences. From modern websites to mobile
             apps and playful games, I enjoy solving problems through creativity
-            and code. I'm always learning and excited to take on new challenges
+            and code. I&apos;m always learning and excited to take on new challenges
             that push my skills further.
           </div>
           <div className="w-full max-w-[858px] mt-20 mx-auto px-4">

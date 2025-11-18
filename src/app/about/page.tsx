@@ -1,8 +1,6 @@
 import React from "react";
 import Navbar from "../../components/navbar";
 import Link from 'next/link';
-import SkillBar from "../../components/skillbar";
-import Timeline from "../../components/timeline";
 
 export default function About() {
 	return (
@@ -55,13 +53,13 @@ export default function About() {
 							</div>
 
 							<div className="w-full md:w-2/3 text-white font-medium space-y-4 text-sm sm:text-sm">
-                <p>
-                  You can call me 'Namnile'
-                </p>
+								<p>
+								You can call me &apos;Namnile&apos;
+								</p>
 								<p className="leading-relaxed">
-									I'm a software engineer who builds delightful and useful digital experiences across web, mobile and
-									games. I enjoy translating ideas into polished products from responsive front-end interfaces to
-									gameplay systems.
+								I&apos;m a software engineer who builds delightful and useful digital experiences across web, mobile and
+								games. I enjoy translating ideas into polished products from responsive front-end interfaces to
+								gameplay systems.
 								</p>
 
 								<p className="leading-relaxed">
