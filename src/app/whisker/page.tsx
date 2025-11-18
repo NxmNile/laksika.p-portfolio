@@ -57,7 +57,7 @@ export default function WhiskerPage() {
 
 									<div className="mt-6">
 										<h3 className="text-sm text-gray-300 font-semibold">Role</h3>
-										<p className="text-gray-200">Game Designer, 3D Artist and Game Developer</p>
+										<p className="text-gray-200">Game Designer, 3D Artist, 3D Animator and Game Developer(Solo Dev)</p>
 									</div>
 
 									<div className="mt-4">

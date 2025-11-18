@@ -29,16 +29,17 @@ const projects: Project[] = [
 	{
 		id: 3,
 		title: "[Game] Carbon Quest",
-		description: "Game project ",
-		href: "#",
-		image: '/image/carbonquest/CarbonQuest-1.png',
+		description: "Game project using Unity to educate players on carbon footprint reduction through interactive scenarios.",
+		href: "/carbon",
+		image: '/image/carbon/Screenshot 2025-11-18 215303.png',
 	},
+	
 	{
 		id: 4,
-		title: "[Game] Rabies",
-		description: "Game project for educational and providing awareness about rabies disease, developed using Unity. Collaborated with Department of",
-		href: "/cockroach",
-		image: '/image/cockroach/CockroachBusters-1.png',
+		title: "[Game] Chicken Home",
+		description: "Final Project for Game Development class, a 2D Game developed using Unity. This game provides knowledge about avian influenza and its prevention. Collaborated with the Department of Disease Control.",
+		href: "/chicken",
+		image: '/image/chicken/image (6).png',
 	},
 	{
 		id: 5,
@@ -51,25 +52,18 @@ const projects: Project[] = [
 		id: 6,
 		title: "[3D Model] Drake from God of War",
 		description: "Created detailed 3D model of Drake using Blender.",
-		href: "#",
-		image: '/image/000021.jpg',
+		href: "/drake",
+		image: '/image/drake/drake1.jpg',
 	},
    
     {
         id: 7,
         title:"[Animation] Princess Peach",
         description: "3D animation project using Maya.",
-        href: "#",
-		image: '/image/000021.jpg',
+        href: "/peach",
+		image: '/image/peach/Screenshot 2025-11-19 002449.png',
     },
-    {
-		id: 8,
-		title: "[3D Model] Art Toy",
-		description: "Freelance 3D modeling project creating a unique art toy by using Blender.",
-		href: "#",
-		image: '/image/IMG_0467.jpg',
-        
-	},
+    
 ];
 
 export default function ProjectPage() {

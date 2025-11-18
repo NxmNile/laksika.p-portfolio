@@ -23,7 +23,7 @@ const Navbar = () => {
   useEffect(() => {
     if (!pathname) return;
     // Treat project subpages (like /whisker) as part of Project
-    if (pathname.startsWith('/project') || pathname.startsWith('/whisker')|| pathname.startsWith('/hp_eval')|| pathname.startsWith('/cockroach')) {
+    if (pathname.startsWith('/project') || pathname.startsWith('/whisker')|| pathname.startsWith('/hp_eval')|| pathname.startsWith('/cockroach')|| pathname.startsWith('/carbon')|| pathname.startsWith('/chicken')|| pathname.startsWith('/peach')|| pathname.startsWith('/drake')) {
       setActiveItem('Project');
       return;
     }
