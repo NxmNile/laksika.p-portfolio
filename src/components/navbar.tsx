@@ -22,6 +22,12 @@ const Navbar = () => {
 
   useEffect(() => {
     if (!pathname) return;
+    // Treat project subpages (like /whisker) as part of Project
+    if (pathname.startsWith('/project') || pathname.startsWith('/whisker')|| pathname.startsWith('/hp_eval')|| pathname.startsWith('/cockroach')) {
+      setActiveItem('Project');
+      return;
+    }
+
     const found = navItems.find((item) => routeMap[item] === pathname || (routeMap[item] !== '/' && pathname.startsWith(routeMap[item])));
     setActiveItem(found ?? 'Home');
   }, [pathname]);

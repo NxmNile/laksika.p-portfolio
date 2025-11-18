@@ -1,16 +1,28 @@
 import React from "react";
 import Navbar from "../../components/navbar";
 import FadeIn from "../../components/FadeIn";
+import Link from "next/link";
 
 export default function ActivityPage() {
   return (
     <>
       <div className="relative bg-[#242424]">
+        {/* Fixed navbar and back button for Activity page */}
+        <div className="fixed top-4 left-0 right-0 z-50 flex justify-center items-center px-4 pointer-events-none">
+          <div className="w-full max-w-[858px] flex items-center justify-center pointer-events-auto">
+            <Navbar />
+          </div>
+        </div>
+
+        {/* Separate fixed Back button so it's always visible */}
+        <Link href="/project" className="fixed top-4 left-4 z-[60] bg-white/95 text-black rounded-full px-3 py-1 text-sm font-medium shadow-md hover:opacity-95">
+          Back
+        </Link>
+
         <FadeIn triggerOnMount className="w-full">
           <div className="bg-[#242424] w-full flex flex-col items-center">
-            <div className="flex items-center justify-center w-full mt-10">
-              <Navbar />
-            </div>
+            {/* spacer so content isn't hidden behind fixed navbar */}
+            <div className="h-20" />
 
             <div className="w-full max-w-[858px] mt-12 text-white px-4 mx-auto">
               <h1 className="text-3xl sm:text-4xl font-bold mb-6 text-center md:text-left md:ml-10">
@@ -30,29 +42,29 @@ export default function ActivityPage() {
                   </p>
                 </div>
 
-                {/* Right: images - responsive: stacked on mobile, two columns on md+ with matched md height */}
-                <div className="w-full md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {/* Left column: two stacked images; use auto height on mobile and split md height on larger screens */}
-                  <div className="flex flex-col gap-4 md:h-[360px]">
+                {/* Right: images - make a 2-column grid on mobile so images aren't too large */}
+                <div className="w-full md:w-2/3 grid grid-cols-2 gap-4">
+                  <div>
                     <img
                       src="/image/IMG_9675.jpg"
                       alt="Activity 1"
-                      className="w-full h-auto max-h-[260px] md:h-1/2 object-cover rounded-2xl shadow-md hover:scale-105 transition-transform duration-200"
-                    />
-
-                    <img
-                      src="/image/IMG_9695.jpg"
-                      alt="Activity 3"
-                      className="w-full h-auto max-h-[260px] md:h-1/2 object-cover rounded-2xl shadow-md hover:scale-105 transition-transform duration-200"
+                      className="w-full h-40 sm:h-56 md:h-[360px] object-cover rounded-2xl shadow-md hover:scale-105 transition-transform duration-200"
                     />
                   </div>
 
-                  {/* Right column: single image fills full md column height, but stays natural height on mobile */}
-                  <div className="flex items-center md:h-[360px]">
+                  <div>
                     <img
                       src="/image/IMG_9596.jpg"
                       alt="Activity 2"
-                      className="w-full h-auto max-h-[320px] md:h-full object-cover rounded-2xl shadow-md hover:scale-105 transition-transform duration-200"
+                      className="w-full h-40 sm:h-56 md:h-[360px] object-cover rounded-2xl shadow-md hover:scale-105 transition-transform duration-200"
+                    />
+                  </div>
+
+                  <div>
+                    <img
+                      src="/image/IMG_9695.jpg"
+                      alt="Activity 3"
+                      className="w-full h-40 sm:h-56 md:h-[360px] object-cover rounded-2xl shadow-md hover:scale-105 transition-transform duration-200"
                     />
                   </div>
                 </div>
@@ -69,36 +81,36 @@ export default function ActivityPage() {
                 Certificate
               </h2>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <a href="/image/Cer1.jpg" target="_blank" rel="noopener noreferrer" className="mx-auto">
+              <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
+                <a href="/image/Cer1.jpg" target="_blank" rel="noopener noreferrer" className="block w-full">
                   <img
                     src="/image/Cer1.jpg"
                     alt="Certificate 1"
-                    className="mx-auto max-w-full h-auto max-h-[280px] sm:max-h-[220px] md:max-h-none rounded-2xl shadow-md transition-transform duration-200 hover:scale-105"
+                    className="w-full h-40 sm:h-44 md:h-auto object-cover rounded-2xl shadow-md transition-transform duration-200 hover:scale-105"
                   />
                 </a>
 
-                <a href="/image/cer2.png" target="_blank" rel="noopener noreferrer" className="mx-auto">
+                <a href="/image/cer2.png" target="_blank" rel="noopener noreferrer" className="block w-full">
                   <img
                     src="/image/cer2.png"
                     alt="Certificate 2"
-                    className="mx-auto max-w-full h-auto max-h-[280px] sm:max-h-[220px] md:max-h-none rounded-2xl shadow-md transition-transform duration-200 hover:scale-105"
+                    className="w-full h-40 sm:h-44 md:h-auto object-cover rounded-2xl shadow-md transition-transform duration-200 hover:scale-105"
                   />
                 </a>
 
-                <a href="/image/cer3.jpg" target="_blank" rel="noopener noreferrer" className="mx-auto">
+                <a href="/image/cer3.jpg" target="_blank" rel="noopener noreferrer" className="block w-full">
                   <img
                     src="/image/cer3.jpg"
                     alt="Certificate 3"
-                    className="mx-auto max-w-full h-auto max-h-[280px] sm:max-h-[220px] md:max-h-none rounded-2xl shadow-md transition-transform duration-200 hover:scale-105"
+                    className="w-full h-40 sm:h-44 md:h-auto object-cover rounded-2xl shadow-md transition-transform duration-200 hover:scale-105"
                   />
                 </a>
 
-                <a href="/image/cer4.jpg" target="_blank" rel="noopener noreferrer" className="mx-auto">
+                <a href="/image/cer4.jpg" target="_blank" rel="noopener noreferrer" className="block w-full">
                   <img
                     src="/image/cer4.jpg"
                     alt="Certificate 4"
-                    className="mx-auto max-w-full h-auto max-h-[280px] sm:max-h-[220px] md:max-h-none rounded-2xl shadow-md transition-transform duration-200 hover:scale-105"
+                    className="w-full h-40 sm:h-44 md:h-auto object-cover rounded-2xl shadow-md transition-transform duration-200 hover:scale-105"
                   />
                 </a>
               </div>
