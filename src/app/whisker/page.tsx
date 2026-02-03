@@ -44,6 +44,15 @@ export default function WhiskerPage() {
 											<img src="/image/whisker/rabbit.png" alt="Whisker character" className="w-full h-40 sm:h-56 md:h-[360px] object-cover rounded-2xl shadow-md" />
 										</div>
 									</div>
+
+									<div className="mt-4">
+										<video
+											src="/image/Whisker.mp4"
+											controls
+											playsInline
+											className="w-full h-56 sm:h-72 md:h-[420px] object-cover rounded-2xl shadow-md bg-black"
+										/>
+									</div>
 								</div>
 
 								{/* Description below the gallery */}
